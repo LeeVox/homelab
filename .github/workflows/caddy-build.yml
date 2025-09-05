@@ -37,7 +37,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
-          context: .
+          context: ./caddy
           file: Dockerfile
           build-args: |
             CADDY_VERSION=${{ inputs.caddy_version }}

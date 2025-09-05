@@ -40,7 +40,7 @@ jobs:
       - name: Build and push alpine
         uses: docker/build-push-action@v6
         with:
-          context: .
+          context: ./caddy
           file: Dockerfile.alpine
           build-args: |
             CADDY_VERSION=${{ inputs.caddy_version }}
